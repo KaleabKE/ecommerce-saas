@@ -5,6 +5,7 @@
   "scripts": {},
   "private": true,
   "dependencies": {
+    "@prisma/client": "^6.11.1",
     "axios": "^1.10.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
@@ -12,6 +13,7 @@
     "express-http-proxy": "^2.1.1",
     "express-rate-limit": "^7.5.1",
     "morgan": "^1.10.0",
+    "prisma": "^6.11.1",
     "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
