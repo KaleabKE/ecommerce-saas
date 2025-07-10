@@ -18,15 +18,13 @@
         <div class="header">
             <h2>Account Activation</h2>
         </div>
-        <h3>Hello {{name}},</h3>
+        <h3>Hello <%=name %>,</h3>
         <p>Thank you for registering with our service. Please use the following OTP to activate your account:</p>
-        <div class="otp">{{otp}}</div>
-        <p>Alternatively, you can click the button below to activate your account:</p>
-        <a href="{{activationUrl}}" class="button">Activate Account</a>
+        <div class="otp"><%= otp %></div>
         <p>If you didn't request this activation, please ignore this email.</p>
         <div class="footer">
             <p>This email was sent automatically. Please do not reply to this message.</p>
-            <p>Contact support: support@example.com</p>
+            <p>Contact support: support@ecommerce.com</p>
         </div>
     </div>
 </body>

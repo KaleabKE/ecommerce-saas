@@ -6,12 +6,12 @@
     "version": "1.0.0"
   },
   "host": "localhost:6001",
-  "basePath": "/",
+  "basePath": "/api",
   "schemes": [
     "http"
   ],
   "paths": {
-    "/api/user-registation": {
+    "/user-registation": {
       "post": {
         "description": "",
         "parameters": [
@@ -22,10 +22,10 @@
               "type": "object",
               "properties": {
                 "name": {
-                  "example": "kaleab"
+                  "example": "Kaleab"
                 },
                 "email": {
-                  "example": "kaleab@gmail.com"
+                  "example": "kaleabkassahun12@gmail.com"
                 }
               }
             }
@@ -34,6 +34,39 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/verify-user": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "example": "kaleabkassahun12@gmail.com"
+                },
+                "otp": {
+                  "example": "123456"
+                },
+                "password": {
+                  "example": "%TGBnhy6"
+                },
+                "name": {
+                  "example": "Kaleab"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
           }
         }
       }
