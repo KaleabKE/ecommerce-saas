@@ -26,6 +26,9 @@
                 },
                 "email": {
                   "example": "kaleabkassahun12@gmail.com"
+                },
+                "password": {
+                  "example": "%TGBnhy6"
                 }
               }
             }
@@ -85,6 +88,53 @@
                   "example": "kaleabkassahun12@gmail.com"
                 },
                 "password": {
+                  "example": "%TGBnhy6"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/forgot-password-user": {
+      "post": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/verify-forgot-password-user": {
+      "post": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/reset-password-user": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "example": "kaleabkassahun12@gmail.com"
+                },
+                "newPassword": {
                   "example": "%TGBnhy6"
                 }
               }
